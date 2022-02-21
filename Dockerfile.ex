@@ -1,6 +1,6 @@
 FROM node
 
-RUN npm i -g yarn 
+RUN npm i -g yarn
 
 COPY ./ /opt/server/
 
@@ -11,4 +11,3 @@ VOLUME /opt/server/
 WORKDIR /opt/server/
 
 CMD yarn start
-
