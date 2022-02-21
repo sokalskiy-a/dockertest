@@ -2,13 +2,12 @@ FROM alpine
 
 RUN apk add git \
 	&& apk add yarn \
-	&& git clone https://github.com/drucoder/docker-site.git \
-	&& cd docker-site \
-	&& yarn 
+	&& git clone https://github.com/sokalskiy-a/dockertest.git \
+	&& cd dockertest \
+	&& yarn
 
-WORKDIR ./docker-site
+WORKDIR ./dockertest
 
 CMD yarn start
 
 EXPOSE 3000
-
