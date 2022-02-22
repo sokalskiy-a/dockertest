@@ -14,7 +14,6 @@ services:
     restart: always
   app:
     image: sokalskyi/web-server
-    container_name: application
     ports:
       - 3000-3005:3000
     environment:
