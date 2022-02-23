@@ -15,7 +15,7 @@ services:
   app:
     image: sokalskyi/web-server
     ports:
-      - "3000-3005:3000"
+      - "3000"
     environment:
       POSTGRES_HOST: db
     restart: always
